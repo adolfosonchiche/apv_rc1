@@ -29,8 +29,8 @@ EOF
 
 service dnsmasq start
 #inteface wifi  es wlo1 para mi
-ifconfig wlan0 up
-ifconfig wlan0 10.0.0.1/24 #AQUI PONER EL IP DE DEL ROUTER
+ifconfig wlp1s0 up
+ifconfig wlp1s0 192.168.42.6/24 #AQUI PONER EL IP DE DEL ROUTER
 
 iptables -t nat -F
 iptables -F
@@ -43,9 +43,9 @@ interface=wlp1s0
 driver=nl80211
 channel=1
 
-ssid=WiFiAP
+ssid=myhotspot
 wpa=2
-wpa_passphrase=HOLAROJAS123
+wpa_passphrase=KaaVLievaC
 wpa_key_mgmt=WPA-PSK
 wpa_pairwise=CCMP
 # Change the broadcasted/multicasted keys after this many seconds.
