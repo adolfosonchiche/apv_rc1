@@ -1,0 +1,5 @@
+#change wlan0 to your wireless device
+interface=wlp1s0
+driver=nl80211
+ssid=test
+channel=1
