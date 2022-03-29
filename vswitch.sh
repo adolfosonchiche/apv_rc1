@@ -52,6 +52,7 @@ ip link set lo down
 ip addr flush dev lo
 ip link set lo up
 ip addr add 10.10.10.5/24 dev wlp1s0
+
 # start hostapd
 killall dnsmasq
 dnsmasq
